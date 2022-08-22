@@ -34,7 +34,7 @@ $(function(){
   <select name="client[barber]" class="form-control">
 
       <% @barbers.each do |item| %>
-        <option <%= @barber == item['name'] ? 'selected' : '' %>><%= item ['name'] %></option>
+      <option <%= @c.barber == item['name'] ? 'selected' : '' %>><%= item ['name'] %></option>
       <% end %>
 
   </select>
